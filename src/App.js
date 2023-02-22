@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from '@mui/system';
+import lightTheme from './Theme/lightTheme.js';
+import darkTheme from './Theme/darkTheme.js'
+import { useDispatch, useSelector } from 'react-redux';import LogoAnimation from './Animated/LogoAnimation.js';
+;
 
 function App() {
+
+  const { mode } = useSelector((state) => state.Mode)
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider theme={!mode ? lightTheme : darkTheme}>
+       <LogoAnimation />
+      </ThemeProvider>
+    </>
   );
 }
 
