@@ -31,12 +31,14 @@ const lightTheme = createTheme({
     },
     typography: {
         fontFamily: font,
-        h1: { fontWeight: 600 },
-        h2: { fontWeight: 500 },
+        h1: { fontWeight: 700 },
+        h2: { fontWeight: 600 },
         h3: { fontWeight: 400 },
         h4: { fontWeight: 300 },
         h5: { fontWeight: 300 },
-        h6: { fontWeight: 300 }
+        h6: { fontWeight: 300 },
+        han:{fontFamily:"'hanson', sans-serif"},
+        ken:{fontFamily:"'Kenyan Coffee', sans-serif"}
     },
     breakpoints:{
         values:{
