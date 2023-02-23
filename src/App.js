@@ -3,6 +3,7 @@ import lightTheme from './Theme/lightTheme.js';
 import darkTheme from './Theme/darkTheme.js'
 import { useDispatch, useSelector } from 'react-redux';
 import NavBar from './Components/NavBar.js';
+import FirstPage from './Pages/FirstPage.js';
 
 
 
@@ -14,7 +15,7 @@ function App() {
   return (
     <>
       <ThemeProvider theme={!mode ? lightTheme : darkTheme}>
-       <NavBar />
+       <FirstPage />
       </ThemeProvider>
     </>
   );
