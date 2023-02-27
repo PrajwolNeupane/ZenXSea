@@ -2,7 +2,7 @@ import { ThemeProvider } from '@mui/system';
 import lightTheme from './Theme/lightTheme.js';
 import darkTheme from './Theme/darkTheme.js'
 import { useDispatch, useSelector } from 'react-redux';
-import MountainAnimation from './Pages/MountainAnimation.js';
+import MountainTravelPage from './Pages/MountainTravelPage.js';
 
 
 
@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <ThemeProvider theme={!mode ? lightTheme : darkTheme}>
-       <MountainAnimation />
+       <MountainTravelPage />
       </ThemeProvider>
     </>
   );
